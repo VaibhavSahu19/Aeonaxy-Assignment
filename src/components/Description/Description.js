@@ -47,7 +47,7 @@ function Description() {
                 </div>
                 <div className={`relative flex flex-col justify-center items-center border-[2px] rounded-[10px] gap-[10px] h-[350px] w-[280px] cursor-pointer ${isImage2Clicked ? 'border-[#Eb4B8B]' : ''} py-[10px]`} onClick={() => handleClick(2)}>
                     <img className={`w-[100%] h-auto ${isImage2Clicked ? 'absolute -top-1/4' : ''} `} src={Image2} alt='Option 3' />
-                    <h3 className='text-2xl font-bold px-[20px]'>I'm a designer looking to share my work</h3>
+                    <h3 className='text-2xl font-bold px-[20px]'>I'm looking to hire a designer</h3>
                     <p className={`text-[13px] text-gray-500 px-[20px] ${isImage2Clicked ? '' : 'hidden'}`}>With over 7 million shots from a vast community of designers, Dribbble is the leading source for design inspiration.</p>
                     <div className='relative'>
                         <input className={`w-[20px] h-[20px] border-[2px] rounded-[50%] flex justify-center items-center text-[10px] ${
@@ -62,7 +62,7 @@ function Description() {
                 </div>
                 <div className={`relative flex flex-col justify-center items-center border-[2px] rounded-[10px] gap-[10px] h-[350px] w-[280px] cursor-pointer ${isImage3Clicked ? 'border-[#Eb4B8B]' : ''} py-[10px]`} onClick={() => handleClick(3)}>
                     <img className={`w-[100%] h-auto ${isImage3Clicked ? 'absolute -top-1/4' : ''} `} src={Image3} alt='Option 3' />
-                    <h3 className='text-2xl font-bold px-[20px]'>I'm a designer looking to share my work</h3>
+                    <h3 className='text-2xl font-bold px-[20px]'>I'm looking for design inspiration</h3>
                     <p className={`text-[13px] text-gray-500 px-[20px] ${isImage3Clicked ? '' : 'hidden'}`}>With over 7 million shots from a vast community of designers, Dribbble is the leading source for design inspiration.</p>
                     <div className='relative'>
                         <input className={`w-[20px] h-[20px] border-[2px] rounded-[50%] flex justify-center items-center text-[10px] ${
