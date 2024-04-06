@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { UserContext, UserProvider } from "../../../src/Context";
 
 function RightSignUp() {
+    const { user, setUser } = useContext(UserContext);
   return (
     <section className='h-screen flex flex-col px-[40px] py-[20px] font-[roboto] text-[80%]'>
         <div className='flex w-[100%] justify-end'>Already a member?<a href='' className='text-blue-700'>&nbsp;Sign in</a>
@@ -32,7 +34,7 @@ function RightSignUp() {
             <button className='bg-[#EA4A8A] w-[200px] h-[35px] rounded-md text-white hover:bg-pink-600 active:bg-pink-700'>
                 Create Account
             </button>
-            <div className='text-[10px] pr-[100px]'>This site is protected by reCAPTCHA and the Google <a className='text-blue-700'>Privacy Policy</a> and <a className='text-blue-700'>Terms of Service</a> apply.</div>
+            <div className='text-[10px] pr-[100px]'>This site is protected by reCAPTCHA and the Google <a href='' className='text-blue-700'>Privacy Policy</a> and <a href='' className='text-blue-700'>Terms of Service</a> apply.</div>
         </div>
     </section>
   )
