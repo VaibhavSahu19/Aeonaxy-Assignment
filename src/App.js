@@ -3,6 +3,7 @@ import Signup from './components/Signup/Signup'
 import Profile from './components/CreateProfile/Profile'
 import { UserContext, UserProvider } from "../src/Context.js";
 import Description from './components/Description/Description.js';
+import Verify from './components/Verification/Verify.js';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <div>
         {/* <Signup /> */}
         {/* <Profile /> */}
-        <Description />
+        {/* <Description /> */}
+        <Verify />
       </div>
     </UserProvider>
   )
