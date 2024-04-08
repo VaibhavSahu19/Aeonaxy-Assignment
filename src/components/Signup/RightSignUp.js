@@ -6,7 +6,7 @@ function RightSignUp() {
     <section className=' flex flex-col px-[15px] sm:px-[40px] py-[20px] font-[roboto] text-[80%]'>
         <div className='flex w-[100%] justify-end'>Already a member?<a href='' className='text-blue-700'>&nbsp;Sign in</a>
         </div>
-        <div className='flex flex-col px-[23%] pt-[10px] gap-[30px]'>
+        <div className='flex flex-col px-[10%] sm:px-[23%] pt-[30px] gap-[30px]'>
             <h3 className='text-2xl font-extrabold'>Sign up to Dribbble</h3>
             <div className='flex mt-[20px] justify-between'>
                 <div className='flex flex-col w-[48%]'>
