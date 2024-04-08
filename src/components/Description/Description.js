@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Image1 from "../../images/Description/3-1.png"
 import Image2 from "../../images/Description/3-2.png"
 import Image3 from "../../images/Description/3-3.png"
+import { Link } from 'react-router-dom';
 
 function Description() {
     const [isImage1Clicked, setIsImage1Clicked] = useState(false);
@@ -22,9 +23,11 @@ function Description() {
     <section className='flex flex-col m-[20px] font-[roboto]'>
         <div className='flex gap-4 justify-start items-center'>
             <div className='font-[rochester] text-2xl text-[#EB4B8B] font-semibold '>dribbble</div>
-            <button className="material-symbols-outlined bg-[#e2e2e2] rounded-[5px] p-[4px] text-md">
-                chevron_left
-            </button>
+            <Link to='/profile'>
+                <button className="material-symbols-outlined bg-[#e2e2e2] rounded-[5px] p-[4px] text-md">
+                    chevron_left
+                </button>
+            </Link>
         </div>
         <div className='flex flex-col justify-center items-center  text-center py-[20px]'>
             <h2 className='text-3xl font-extrabold'>What brings you to Dribbble?</h2>
@@ -78,7 +81,9 @@ function Description() {
             </div>
 
             {(isImage1Clicked || isImage2Clicked || isImage3Clicked) && <h4 className='mt-[20px] text-md font-bold'>Anything else? You can select multiple</h4>}
-            <button className='bg-[#Eb4B8B] w-[15%] h-[40px] mt-[10px] text-white rounded-lg'>Finish</button>
+            <Link to='/verify'>
+                <button className='bg-[#Eb4B8B] w-[200%] h-[40px] mt-[10px] text-white rounded-lg'>Finish</button>
+            </Link>
         </div>
     </section>
   )

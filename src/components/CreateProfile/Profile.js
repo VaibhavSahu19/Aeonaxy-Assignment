@@ -1,6 +1,6 @@
 import React, { useRef, useState, useContext } from 'react'
 import cameraImage from "../../images/Profile/2-camera-image.png";
-import { UserContext, UserProvider } from "../../../src/Context.js";
+import { Link } from 'react-router-dom';
 
 function Profile() {
     const [uploadImageIcon, setUploadImageIcon] = useState(cameraImage)
@@ -15,7 +15,6 @@ function Profile() {
         const file = e.target.files[0];
         console.log('Selected file:', file);
     };
-    const { user, setUser } = useContext(UserContext);
   return (
     <section className='h-screen flex flex-col m-[30px] gap-[30px] font-[roboto]'>
         <div className='font-[rochester] text-2xl text-pink-400 font-semibold'>dribbble</div>
@@ -56,7 +55,9 @@ function Profile() {
             </div>
             <h4 className='text-lg font-bold mb-[10px] '>Add your location</h4>
             <input className='outline-none border-b-[2px] py-[5px] mb-[35px]' type='text' placeholder='Enter a location'></input>
-            <button className={`w-[42%]  text-white text-sm h-[30px] rounded-md bg-[#EB4B8B]`}>Next</button>
+            <Link to='/description'>
+                <button className={`w-[42%]  text-white text-sm h-[30px] rounded-md bg-[#EB4B8B]`}>Next</button>
+            </Link>
         </div>
     </section>
   )

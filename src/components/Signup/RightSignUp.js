@@ -1,8 +1,7 @@
-import React, { useContext } from 'react'
-import { UserContext, UserProvider } from "../../../src/Context";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 function RightSignUp() {
-    const { user, setUser } = useContext(UserContext);
   return (
     <section className='h-screen flex flex-col px-[40px] py-[20px] font-[roboto] text-[80%]'>
         <div className='flex w-[100%] justify-end'>Already a member?<a href='' className='text-blue-700'>&nbsp;Sign in</a>
@@ -31,9 +30,12 @@ function RightSignUp() {
                 <input type='checkbox' className='w-[15px] h-[15px] border-2'></input>
                 <label>Creating an account means you're okay with our <a className='text-blue-700' href='' >Terms of Service</a>, <a className='text-blue-700' href='' >Privacy Policy</a>, and our default <a className='text-blue-700' href='' >Notification Settings</a>.</label>
             </div>
-            <button className='bg-[#EA4A8A] w-[200px] h-[35px] rounded-md text-white hover:bg-pink-600 active:bg-pink-700'>
-                Create Account
-            </button>
+            <Link to='/profile'>
+                <button className='bg-[#EA4A8A] w-[200px] h-[35px] rounded-md text-white hover:bg-pink-600 active:bg-pink-700'>
+                    Create Account
+                </button>
+            </Link>
+            
             <div className='text-[10px] pr-[100px]'>This site is protected by reCAPTCHA and the Google <a href='' className='text-blue-700'>Privacy Policy</a> and <a href='' className='text-blue-700'>Terms of Service</a> apply.</div>
         </div>
     </section>
