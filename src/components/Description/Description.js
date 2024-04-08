@@ -33,8 +33,8 @@ function Description() {
             <h2 className='text-3xl font-extrabold'>What brings you to Dribbble?</h2>
             <p className='mt-[5px] text-gray-500 text-sm'>Select the options that best describes you. Don't worry, you can explore the other options later.</p>
             <div className='flex flex-col sm:flex-row mt-[80px] gap-[70px] md:gap-[20px] text-center justify-center items-top w-[70%]'>
-                <div className={`relative flex flex-col justify-center items-center border-[2px] rounded-[10px] gap-[10px] h-[auto] w-[100%] sm:h-[350px] sm:w-[280px] cursor-pointer ${isImage1Clicked ? 'border-[#Eb4B8B]' : ''} py-[10px]`} onClick={() => handleClick(1)}>
-                    <img className={`w-[100%] h-auto ${isImage1Clicked ? 'absolute -top-1/4' : ''} `} src={Image1} alt='Option 3' />
+                <div className={`relative flex flex-col justify-center items-center border-[2px] rounded-[10px] sm:gap-[10px] h-[auto] w-[100%] sm:h-[350px] sm:w-[280px] cursor-pointer ${isImage1Clicked ? 'border-[#Eb4B8B]' : ''} py-[10px]`} onClick={() => handleClick(1)}>
+                    <img className={`w-[100%] h-auto ${isImage1Clicked ? 'hidden' : ''} sm:${isImage1Clicked ? 'flex absolute -top-1/4' : 'flex'} `} src={Image1} alt='Option 3' />
                     <h3 className='text-2xl font-bold px-[20px]'>I'm a designer looking to share my work</h3>
                     <p className={`text-[13px] text-gray-500 px-[20px] ${isImage1Clicked ? '' : 'hidden'}`}>With over 7 million shots from a vast community of designers, Dribbble is the leading source for design inspiration.</p>
                     <div className='relative'>

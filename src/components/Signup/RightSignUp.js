@@ -36,7 +36,7 @@ function RightSignUp() {
                 </button>
             </Link>
             
-            <div className='text-[10px] pr-[100px]'>This site is protected by reCAPTCHA and the Google <a href='' className='text-blue-700'>Privacy Policy</a> and <a href='' className='text-blue-700'>Terms of Service</a> apply.</div>
+            <div className='text-[10px] sm:pr-[100px]'>This site is protected by reCAPTCHA and the Google <a href='' className='text-blue-700'>Privacy Policy</a> and <a href='' className='text-blue-700'>Terms of Service</a> apply.</div>
         </div>
     </section>
   )
