@@ -16,9 +16,9 @@ function Profile() {
         console.log('Selected file:', file);
     };
   return (
-    <section className='h-screen flex flex-col m-[30px] gap-[30px] font-[roboto]'>
+    <section className=' flex flex-col m-[10px] sm:m-[30px] gap-[30px] font-[roboto]'>
         <div className='font-[rochester] text-2xl text-pink-400 font-semibold'>dribbble</div>
-        <div className='flex flex-col justify-center mx-[30%]'>
+        <div className='flex flex-col justify-center mx-[10%] sm:mx-[30%]'>
             <h2 className='text-3xl font-bold mb-[10px]'>Welcome! Let's create your profile</h2>
             <p className='text-[#686868] mb-[35px]'>Let others get to know you better! You can do these later</p>
             <h4 className='text-xl font-bold'>Add an avatar</h4>
@@ -43,7 +43,7 @@ function Profile() {
                 </div>
                 <div className='flex flex-col gap-[15px]'>
                     <label htmlFor="file-input">
-                        <button className='w-[80%]  border-[1.5px] rounded-lg h-[40px] font-medium' onClick={handleImageClick}>
+                        <button className='w-[80%] text-[13px] sm:text-lg  border-[1.5px] rounded-lg h-[40px] font-medium' onClick={handleImageClick}>
                             Choose image
                         </button>
                     </label>

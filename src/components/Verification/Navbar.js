@@ -2,10 +2,10 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <nav className='flex justify-between px-[20px] py-[10px] border-b-[1px] border-gray-200 sticky top-0  bg-white'>
+    <nav className='flex  justify-between gap-[5px] md:gap-[0px] px-[20px] py-[10px] border-b-[1px] border-gray-200 sticky top-0  bg-white'>
         <div className='flex justify-normal w-[50%] items-center gap-[30px]'>
             <div className='font-[rochester] text-[20px]  font-semibold'>dribbble</div>
-            <ul className='flex justify-evenly items-center gap-[30px] text-gray-600'>
+            <ul className='hidden md:flex justify-evenly items-center gap-[30px] text-gray-600'>
                 <li className='text-[13px]'>Inspiration</li>
                 <li className='text-[13px]'>Find Work</li>
                 <li className='text-[13px]'>Learn Design</li>
@@ -14,11 +14,11 @@ function Navbar() {
             </ul>
         </div>
         <div className='flex justify-end items-center gap-[10px]'>
-            <div className='flex items-center gap-[5px] px-[5px] text-gray-400 bg-gray-200 w-[40%] rounded-md'>
+            <div className='flex items-center gap-[5px] px-[5px] text-gray-400 bg-gray-200 py-[5px] md:py-[0px] md:w-[40%] rounded-md'>
                 <span className="material-symbols-outlined text-[20px]">
                     search
                 </span>
-                <input className='outline-none px-[4px] py-[6px]  text-md bg-transparent w-[100%]' type='text' placeholder='Search'></input>
+                <input className='hidden md:block outline-none px-[4px] py-[6px]  text-md bg-transparent w-[100%]' type='text' placeholder='Search'></input>
             </div>
             <div className='flex justify-center items-center gap-[10px]'>
                 <span className="material-symbols-outlined text-gray-400">

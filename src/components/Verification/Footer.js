@@ -5,8 +5,8 @@ import { faDribbble, faTwitter, faFacebook, faInstagram, faPinterest } from "@fo
 function Footer() {
   return (
     <footer className='flex flex-col bg-gray-100 p-[30px] text-sm'>
-        <div className='flex justify-between'>
-            <div className='flex flex-col w-[20%] gap-[10px]'>
+        <div className='flex justify-between flex-wrap items-center md:items-start gap-[10px]'>
+            <div className='flex flex-col md:w-[18%] gap-[10px]'>
                 <h2 className='text-2xl text-[#EB4B8B] font-[rochester] font-semibold'>dribbble</h2>
                 <p className=''>Dribbble is the world's leading community for creatives to share, grow, and get hired.</p>
                 <div className='flex gap-[15px]'>

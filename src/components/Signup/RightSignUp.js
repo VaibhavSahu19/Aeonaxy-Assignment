@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function RightSignUp() {
   return (
-    <section className='h-screen flex flex-col px-[40px] py-[20px] font-[roboto] text-[80%]'>
+    <section className=' flex flex-col px-[15px] md:px-[40px] py-[20px] font-[roboto] text-[80%]'>
         <div className='flex w-[100%] justify-end'>Already a member?<a href='' className='text-blue-700'>&nbsp;Sign in</a>
         </div>
         <div className='flex flex-col px-[23%] pt-[30px] gap-[30px]'>
