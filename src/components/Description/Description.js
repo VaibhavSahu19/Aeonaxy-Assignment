@@ -10,9 +10,9 @@ function Description() {
     const [isImage3Clicked, setIsImage3Clicked] = useState(false);
 
     function handleClick(num){
-        if(num == 1){
+        if(num === 1){
             setIsImage1Clicked(!isImage1Clicked);
-        }else if(num == 2){
+        }else if(num === 2){
             setIsImage2Clicked(!isImage2Clicked);
         }else{
             setIsImage3Clicked(!isImage3Clicked);

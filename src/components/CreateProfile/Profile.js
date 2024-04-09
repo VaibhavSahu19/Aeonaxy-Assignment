@@ -1,4 +1,4 @@
-import React, { useRef, useState, useContext } from 'react'
+import React, { useRef, useState} from 'react'
 import cameraImage from "../../images/Profile/2-camera-image.png";
 import { Link } from 'react-router-dom';
 

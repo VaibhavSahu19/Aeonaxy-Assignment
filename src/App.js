@@ -4,7 +4,7 @@ import Profile from './components/CreateProfile/Profile';
 import Description from './components/Description/Description.js';
 import Verify from './components/Verification/Verify.js';
 import NotFound from "./components/NotFound.js"
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
