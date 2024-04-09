@@ -1,4 +1,5 @@
 import React from 'react'
+import user from "../../images/Verify/user.png";
 
 function Navbar() {
   return (
@@ -24,7 +25,7 @@ function Navbar() {
                 <span className="material-symbols-outlined text-gray-400">
                 business_center
                 </span>
-                <img src='' alt='profile'></img>
+                <img src={user} alt='profile' className='w-[20px]'></img>
             </div>
             <button className='px-[10px] py-[6px]  bg-[#Eb4B8B] text-white rounded-md text-sm'>Upload</button>
         </div>
