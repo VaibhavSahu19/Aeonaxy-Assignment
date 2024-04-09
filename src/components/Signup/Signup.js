@@ -4,7 +4,7 @@ import RightSignUp from './RightSignUp';
 
 function Signup() {
     return (
-        <section className='sm:flex'>
+        <section className='h-[105vh] sm:flex'>
             <LeftSignUp />
             <RightSignUp />
         </section>
